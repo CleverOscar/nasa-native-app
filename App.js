@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import HomeScreen from './Views/HomeScreen';
+
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Nasa Native Application</Text>
-      <StatusBar style="auto" />
+      <HomeScreen />
     </View>
   );
 }
