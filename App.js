@@ -12,12 +12,11 @@ export default function App() {
   return (
     <ImageBackground source={image} resizeMode="cover">
       <StatusBar barStyle='light-content' />
-       <SafeAreaView className="h-screen">
+      <SafeAreaView className="h-full mx-2">
         <View>
-          <Text className="text-white">Nasa Native Application</Text>
           <HomeScreen />
         </View>
-    </SafeAreaView>
+      </SafeAreaView>
     </ImageBackground>
   );
 }
