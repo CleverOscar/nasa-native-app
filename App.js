@@ -1,4 +1,3 @@
-
 import { StyleSheet, Text, View, SafeAreaView, ImageBackground, StatusBar, Dimensions } from 'react-native';
 
 import HomeScreen from './Views/HomeScreen';
@@ -15,7 +14,7 @@ export default function App() {
       <StatusBar barStyle='light-content' />
        <SafeAreaView className="h-screen">
         <View>
-          <Text>Nasa Native Application</Text>
+          <Text className="text-white">Nasa Native Application</Text>
           <HomeScreen />
         </View>
     </SafeAreaView>
