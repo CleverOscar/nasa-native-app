@@ -1,3 +1,5 @@
+
+
 import { StyleSheet, Text, View, SafeAreaView, ImageBackground, StatusBar, Dimensions } from 'react-native';
 
 import HomeScreen from './Views/HomeScreen';
@@ -12,7 +14,7 @@ export default function App() {
   return (
     <ImageBackground source={image} resizeMode="cover">
       <StatusBar barStyle='light-content' />
-      <SafeAreaView className="h-full mx-2">
+      <SafeAreaView className="h-full">
         <View>
           <HomeScreen />
         </View>
