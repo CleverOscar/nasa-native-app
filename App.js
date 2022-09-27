@@ -1,20 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+
+import { StyleSheet, Text, View, SafeAreaView, ImageBackground, StatusBar, Dimensions } from 'react-native';
+
+import HomeScreen from './Views/HomeScreen';
+
+const image = {
+  uri: 'https://wallpapercave.com/wp/wp5111092.jpg'
+}
+
+var {width} = Dimensions.get('window');
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Nasa Native Application</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ImageBackground source={image} resizeMode="cover">
+      <StatusBar barStyle='light-content' />
+      <SafeAreaView className="h-full">
+        <View>
+          <HomeScreen />
+        </View>
+      </SafeAreaView>
+    </ImageBackground>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
