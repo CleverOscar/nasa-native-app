@@ -1,13 +1,15 @@
 import React from 'react';
-import {View, Text} from 'react-native'
+import {View, Text, SafeAreaView} from 'react-native'
 
 
 export default function PhotoOfTheDayScreen({navigation}){
     return(
-        <View>
-            <Text>
-                Photo Of The Day Screen
-            </Text>
-        </View>
+        <SafeAreaView>
+            <View>
+                <Text>
+                    Photo Of The Day Screen
+                </Text>
+            </View>
+        </SafeAreaView>
     )
 }
