@@ -46,6 +46,10 @@ export default function HomeScreen({navigation}){
                     <Text className="text-white text-left p-4 text-3xl my-auto " >
                         Welcome to the React Native version of our, a application that fetches data from NASA 's Portal API database
                     </Text>
+
+                    <Text className="text-white text-center pb-4 text-base">
+                        Swipe right to view current features &#x27A1;
+                    </Text>
                 </View>
 
                 <View className=" bg-gray-900/80 rounded-xl py-2 ">
