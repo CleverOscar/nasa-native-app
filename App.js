@@ -1,4 +1,5 @@
 import 'react-native-gesture-handler'
+
 import { StyleSheet, Text, View, SafeAreaView, ImageBackground, StatusBar } from 'react-native';
 import { createDrawerNavigator  } from '@react-navigation/drawer';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
@@ -12,6 +13,7 @@ const MyTheme = {
     primary: 'rgb(22, 103, 184)'
   }
 }
+
 
 const Drawer = createDrawerNavigator();
 
